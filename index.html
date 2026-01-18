@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name – My work, resume, and contact." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Go to top">YN</a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#work">My Work</a>
+        <a href="https://drive.google.com/" target="_blank" rel="noreferrer">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="nav__btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__drawer" id="drawer" aria-hidden="true">
+      <a href="#work">My Work</a>
+      <a href="https://drive.google.com/" target="_blank" rel="noreferrer">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="container">
+    <section class="hero">
+      <div class="hero__text">
+        <p class="kicker">Hello,</p>
+        <h1 class="title">Your Name here!</h1>
+
+        <p class="lead">
+          I’m a <strong>AI / Data / Software Engineer</strong> building scalable pipelines,
+          GenAI apps, and clean product experiences.
+          <br />
+          <span class="muted">All things: LLMs • Data Engineering • ML • Full-stack</span>
+        </p>
+
+        <p class="tagline">
+          Let’s build experiences that are not just functional — but also inspiring.
+          <span class="spark">✨</span>
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#work">Explore my work</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <div class="social">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span>•</span>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <span>•</span>
+          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YouTube</a>
+        </div>
+      </div>
+
+      <!-- Hero visual (replace with your photo / illustration) -->
+      <div class="hero__card" aria-hidden="true">
+        <div class="blob"></div>
+        <div class="hero__img">
+          <div class="img__placeholder">Your Photo / Visual</div>
+        </div>
+        <div class="mini">
+          <div class="mini__row">
+            <span class="dot"></span>
+            <span class="mini__text">Open to roles • US</span>
+          </div>
+          <div class="mini__row">
+            <span class="dot"></span>
+            <span class="mini__text">GenAI • Data • SWE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__head">
+        <h2>My Work</h2>
+        <p class="muted">Selected projects & case studies.</p>
+      </div>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card__media">
+            <div class="thumb">Project Visual</div>
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="num">01</span>
+              <span class="pill">GenAI</span>
+              <span class="pill">RAG</span>
+            </div>
+            <h3>AI Resume Matcher</h3>
+            <p class="muted">
+              ATS-style JD→Resume alignment, keyword gaps, and tailored bullets using embeddings + LLM.
+            </p>
+            <div class="card__links">
+              <a href="#" target="_blank" rel="noreferrer">View complete case study →</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card__media">
+            <div class="thumb">Project Visual</div>
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="num">02</span>
+              <span class="pill">Data</span>
+              <span class="pill">Spark</span>
+            </div>
+            <h3>Scalable Data Pipeline</h3>
+            <p class="muted">
+              Batch + incremental ingestion, transformation, and validation with Spark/Hive and orchestration.
+            </p>
+            <div class="card__links">
+              <a href="#" target="_blank" rel="noreferrer">View complete case study →</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card__media">
+            <div class="thumb">Project Visual</div>
+          </div>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="num">03</span>
+              <span class="pill">ML</span>
+              <span class="pill">Deployment</span>
+            </div>
+            <h3>ML Prediction API</h3>
+            <p class="muted">
+              Training + evaluation pipeline with a FastAPI inference service and monitoring-ready outputs.
+            </p>
+            <div class="card__links">
+              <a href="#" target="_blank" rel="noreferrer">View complete case study →</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="callout">
+        <p><strong>Tip:</strong> Make each “case study” a separate page later (or a Notion/Google Doc link) with problem → approach → results.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--contact">
+      <div class="contact">
+        <h2>Get in touch</h2>
+        <p class="muted">Email is best. I usually reply within 24 hours.</p>
+
+        <div class="contact__box">
+          <a class="email" href="mailto:youremail@gmail.com">youremail@gmail.com</a>
+          <div class="social">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <span>•</span>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <span>•</span>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </div>
+
+        <p class="footer">
+          <a href="#top">Back to top ↑</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
